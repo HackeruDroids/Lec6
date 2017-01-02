@@ -1,0 +1,16 @@
+<h1>Welcome To the {{PageName}} page</h1>
+{{!--For each movie in arr--}}
+
+
+<ul class="list-group">
+        {{#each arr}}
+            {{!--Display the release year of the movie--}}
+            <a href="{{trailer}}">
+                <li class="list-group-item">
+                    <h2>{{title}}</h2>
+                    <img src="{{image}}" class="img img-thumbnail" width="100" alt="">
+                    <span class="badge">{{releaseYear}}</span>
+               </li>
+           </a>
+        {{/each}}
+</ul>

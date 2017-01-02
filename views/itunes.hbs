@@ -1,0 +1,16 @@
+<h1>Welcome To the {{title}} page</h1>
+{{!--For each Itunes in arr--}}
+
+
+<ul class="list-group">
+        {{#each arr}}
+            {{!--Display the release year of the movie--}}
+           
+            <a href="{{link}}">
+                <li class="list-group-item">
+                    <h2>{{title}}</h2>
+                    <img src="{{image}}" class="img img-thumbnail" width="100" alt="">
+                </li>
+           </a>
+        {{/each}}
+</ul>
